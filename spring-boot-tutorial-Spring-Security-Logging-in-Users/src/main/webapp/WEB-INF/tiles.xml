@@ -30,7 +30,9 @@
 		<put-attribute name="content" value="/WEB-INF/tiles/editstatus.jsp" />
 	</definition>
 		
-	
+	<definition name="app.login" extends="app.default">
+		<put-attribute name="content" value="/WEB-INF/tiles/login.jsp" />
+	</definition>	
 
 </tiles-definitions>
 

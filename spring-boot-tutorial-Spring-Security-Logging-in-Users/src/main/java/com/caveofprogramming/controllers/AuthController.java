@@ -8,6 +8,11 @@ public class AuthController {
 
 	@RequestMapping("/admin")
 	String admin() {
-		return "admin";
+		return "app.admin";
+	}
+	
+	@RequestMapping("/login")
+	String login() {
+		return "app.login";
 	}
 }
