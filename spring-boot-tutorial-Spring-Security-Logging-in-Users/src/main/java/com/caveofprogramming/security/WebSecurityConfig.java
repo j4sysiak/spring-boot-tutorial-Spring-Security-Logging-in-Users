@@ -17,7 +17,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				http
 					.authorizeRequests()
 						.antMatchers("/")
-						.permitAll() 
+						.permitAll()
 						.antMatchers(
 							"/js/*",
 							"/css/*",
@@ -27,7 +27,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 						.authenticated()
 						.and()
 					.formLogin()
-						.loginPage("/admin")
+						.loginPage("/login")
 						.defaultSuccessUrl("/")
 						.permitAll();
 				
