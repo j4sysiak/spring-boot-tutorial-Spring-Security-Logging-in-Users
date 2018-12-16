@@ -138,9 +138,7 @@
 			<artifactId>postgresql</artifactId>
 			<version>${postgresql.version}</version>	 
 		</dependency>
-
-
-
+ 
 
 <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
 <dependency>
