@@ -50,6 +50,7 @@
             <li><a href="${contextRoot}/about">About</a></li>
           </ul>
 			<ul class="nav navbar-nav navbar-right">
+				<li><a href="javascript:$('#logoutForm').submit();">Logout</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown" role="button" aria-haspopup="true"
 					aria-expanded="false">Status <span class="caret"></span></a>
@@ -62,6 +63,13 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+    
+    
+    		<c:url var="logoutLink" value="/logout" />
+    		
+			<form id="logoutForm" method="post" action="${logoutLink}">
+				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+			</form>
       
 <div class="container">       
 	<tiles:insertAttribute name="content" />
