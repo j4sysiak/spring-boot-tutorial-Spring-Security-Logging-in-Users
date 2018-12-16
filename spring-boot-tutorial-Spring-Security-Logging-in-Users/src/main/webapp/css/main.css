@@ -82,3 +82,10 @@ textarea {
 	font-weight: bold;
 	border-color: darkblue;
 }
+
+.login-error {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: red;
+	font-weight: bold;
+}
