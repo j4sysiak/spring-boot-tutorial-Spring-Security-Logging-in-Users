@@ -14,22 +14,22 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		// @formatter:off
 		
-//				http
-//					.authorizeRequests()
-//						.antMatchers("/")
-//						.permitAll();
-//						.antMatchers(
-//							"/js/*",
-//							"/css/*",
-//							"/img/*")
-//						.permitAll()
-//					.anyRequest()
-//						.authenticated()
-//						.and()
-//					.formLogin()
-//						.loginPage("/admin")
-//						.defaultSuccessUrl("/")
-//						.permitAll();
+				http
+					.authorizeRequests()
+						.antMatchers("/")
+						.permitAll() 
+						.antMatchers(
+							"/js/*",
+							"/css/*",
+							"/img/*")
+						.permitAll()
+					.anyRequest()
+						.authenticated()
+						.and()
+					.formLogin()
+						.loginPage("/admin")
+						.defaultSuccessUrl("/")
+						.permitAll();
 				
 		// @formatter:on
 	}

@@ -11,8 +11,8 @@ public class AuthController {
 		return "admin";
 	}
 	
-//	@RequestMapping("/login")
-//	String login() {
-//		return "app.login";
-//	}
+	@RequestMapping("/login")
+	String login() {
+		return "app.login";
+	}
 }
