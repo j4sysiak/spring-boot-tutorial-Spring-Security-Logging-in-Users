@@ -1,4 +1,4 @@
-package com.caveofprogramming.security;
+package pl.jaceksysiak.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -69,6 +69,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter   {
 	    auth.inMemoryAuthentication().passwordEncoder(NoOpPasswordEncoder.getInstance())
         .withUser("aa").password("aa").roles("USER").and()
         .withUser("bb").password("bb").roles("ADMIN");
+	    
+	    System.out.println("auth: " + auth);
 	    
 	    // @formatter:on
     }

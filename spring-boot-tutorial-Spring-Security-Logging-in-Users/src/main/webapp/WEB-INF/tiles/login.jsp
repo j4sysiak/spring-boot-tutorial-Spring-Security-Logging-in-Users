@@ -24,7 +24,7 @@
 			<div class="panel-body">
 				<form method="post" action="${loginUrl}" class="login-form">
 				
-				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+  				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />  
 
 					<div class="input-group">
 						<input type="text" name="username" placeholder="Username"
